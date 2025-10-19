@@ -1,0 +1,39 @@
+{
+  "name": "Silva MD Pro",
+  "description": "Advanced WhatsApp bot by Silva Tech Nexus",
+  "repository": "https://github.com/executive-silva/silva",
+  "keywords": ["whatsapp", "bot", "baileys", "silva", "silva-md-pro"],
+  "env": {
+    "SESSION_ID": {
+      "description": "Your Mega.nz session key, format: Silva~XXXXXXX",
+      "required": false
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Automatically view statuses",
+      "value": "true"
+    },
+    "AUTO_STATUS_REACT": {
+      "description": "Auto-react to viewed statuses",
+      "value": "true"
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "Auto-reply to viewed statuses",
+      "value": "false"
+    },
+    "STATUS_SAVER": {
+      "description": "Enable automatic status saving",
+      "value": "false"
+    },
+    "STATUS_REPLY": {
+      "description": "Reply after saving status",
+      "value": "false"
+    },
+    "CUSTOM_REACT_EMOJIS": {
+      "description": "Comma-separated emojis for status reactions",
+      "value": "❤️,🔥,💯,😍,👏"
+    }
+  },
+  "buildpacks": [
+    { "url": "heroku/nodejs" }
+  ]
+}
